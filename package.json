@@ -1,0 +1,25 @@
+{
+  "name": "@swwind/find-exports",
+  "version": "1.0.0",
+  "type": "module",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swwind/find-exports.git"
+  },
+  "files": [
+    "pkg",
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "wasm-pack build --target web && node patch.js",
+    "clean": "rm -rf pkg",
+    "test": "node index.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
