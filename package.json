@@ -1,6 +1,6 @@
 {
   "name": "@swwind/find-exports",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "module": "index.js",
   "types": "index.d.ts",
@@ -23,7 +23,7 @@
   "scripts": {
     "build": "wasm-pack build --target web && node patch.js",
     "clean": "rm -rf pkg",
-    "test": "node index.test.js"
+    "test": "cargo test && node index.test.js"
   },
   "keywords": [
     "swc",
